@@ -9,31 +9,70 @@
         Scripts
         NOTE: Comment out the script you are not working on.
      -->
-    <!-- 01: Work with Variables and Values -->
-    <!-- <script src="../01-wtj/01-wwvav.js" type="text/javascript" defer></script>  -->
+    <!-- 02-01: Work with Variables and Values -->
+    <!-- <script src="../02-dauc/01-wwvav.js" type="text/javascript" defer></script>  -->
 
-    <!-- 02: Use Function to Repeat Actions -->
-    <!-- <script src="../01-wtj/02-uftra.js" type="text/javascript" defer></script> -->
+    <!-- 02-02: Use Function to Repeat Actions -->
+    <!-- <script src="../02-dauc/02-uftra.js" type="text/javascript" defer></script> -->
 
-    <!-- 03: Break Down Tasks -->
-    <!-- <script src="../01-wtj/03-bdt.js" type="text/javascript" defer></script> -->
+    <!-- 02-03: Break Down Tasks -->
+    <!-- <script src="../02-dauc/03-bdt.js" type="text/javascript" defer></script> -->
 
-    <!-- 04: Customize Functions with Parameters -->
-    <!-- <script src="../01-wtj/04-cfwp.js" type="text/javascript" defer></script> -->
+    <!-- 02-04: Customize Functions with Parameters -->
+    <!-- <script src="../02-dauc/04-cfwp.js" type="text/javascript" defer></script> -->
 
-    <!-- 05: Variables and Scope -->
-    <!-- <script src="../01-wtj/05-vas.js" type="text/javascript" defer></script> -->
+    <!-- 02-05: Variables and Scope -->
+    <!-- <script src="../02-dauc/05-vas.js" type="text/javascript" defer></script> -->
 
-    <!-- 06: Return Values from Functions -->
-    <script src="../01-wtj/06-rvff.js" type="text/javascript" defer></script>
+    <!-- 02-06: Return Values from Functions -->
+    <!-- <script src="../02-dauc/06-rvff.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-01: Repeat Actions and Test for Conditions -->
+    <!-- <script src="../03-raatfc/01-ciftu.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-02: Manage Different Variable Types -->
+    <!-- <script src="../03-raatfc/02-mdvt.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-03: Create Conditional Tests/Statements -->
+    <!-- <script src="../03-raatfc/03-cct.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-04: Build Compount Conditional Tests -->
+    <!-- <script src="../03-raatfc/04-bcct.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-05: Use While Loop -->
+    <!-- <script src="../03-raatfc/05-uwl.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-06: Use Foor Loop -->
+    <!-- <script src="../03-raatfc/06-ufl.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-07: Create Array to Store Groups of Values  -->
+    <!-- <script src="../03-raatfc/07-catsgov.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-08: Use Loops with Arrays -->
+    <!-- <script src="../03-raatfc/08-ulwa.js" type="text/javascript" defer></script> -->
+
+    <!-- 03-09: Changing Arrays -->
+    <script src="../03-raatfc/09-ca.js" type="text/javascript" defer></script>
 
 </head>
-<body>
+<body onload="init();">
     <h1>
         CSP Programming Lab: JavaScript
     </h1>
-    <div id="textArea">
+    <p>Text Output Area</p>
+    <div id="output">
 
     </div>
+
+    <p>Text Entry Field</p>
+    <textarea id="entry"></textarea>
+
+    <p>Button</p>
+    <button 
+        id="btn"
+        onclick="btnClick();"
+    >
+        Click Me
+    </button>
 </body>
 </html>
