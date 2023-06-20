@@ -1,20 +1,32 @@
-/* Return Values */
+/**
+ * TITLE:
+ * Return Values from Functions
+ */
+
+/** 
+ * SECTION:
+ * Functions
+ */
 
 // 1. Define a function named `add` that takes two arguments and returns the sum of those arguments.
-function add(firstNumber, secondNumber) {
+function addNum(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
 }
 
-add(1, 2); // 3
+addNum(1, 2); // 3
 
-/* Storing Values */
+/**
+ * BONUS:
+ * Storing Values
+ */
+
 // Literal
 "John";
 
 // Variable
-var myName = "John";
+let myName = "John";
 
-// Fucntion or Method
+// Function or Method
 function sayHello(name) {
     return "Hello " + name;
 }
