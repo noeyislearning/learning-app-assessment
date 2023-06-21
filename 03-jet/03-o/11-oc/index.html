@@ -1,0 +1,40 @@
+<!-- 
+  TITLE:
+  Object Constructor
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Object Constructor</title>
+   <!--  
+     Scripts
+   -->
+   <script src="core.js" type="module"></script>
+   <script src="./js/backpack.js" type="module"></script>
+ </head>
+ <body>
+   
+ </body>
+ </html>
+
+ <!-- 
+  Difference of function and class:
+  - Class is a blueprint for creating objects with pre-defined properties and methods
+  - Function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value).
+
+  Advantages of using class:
+  - Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
+  - Class declarations are not hoisted. You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
+  - Class can extend another class and inherit all its methods with super() method (super() method is used to call the constructor of the parent class and to access the parent's properties and methods)
+  - Class can have static methods (static methods are called without instantiating their class and cannot be called through a class instance. Static methods are often used to create utility functions for an application)
+
+  Advantages of using function:
+  - Function can be hoisted
+  - Function can be called before it is declared
+  - Function can be used as a constructor
+  - Function can be used as a method
+  - Function can be used as an object
+  - Function can have default parameters
+  -->
