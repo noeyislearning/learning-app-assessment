@@ -146,3 +146,19 @@ figure {
   background: black;
   color: white;
 }
+
+/* Nav Menu */
+
+.nav_menu ul {
+  margin: 0;
+  padding: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav_menu ul a {
+  display: block;
+  padding: .5rem 1rem;
+  color: inherit;
+}
