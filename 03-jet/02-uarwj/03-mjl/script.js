@@ -4,6 +4,16 @@
  */
 
 /**
+ * Method to update the DOM with backpack object properties.
+ * @param {*} update 
+ */
+const updateBackpack = (update) => {
+  let main = document.querySelector("main");
+  main.innerHTML = markup(backpack);
+  console.info(update);
+}
+
+/**
  * Object:
  * Backpack
  */
