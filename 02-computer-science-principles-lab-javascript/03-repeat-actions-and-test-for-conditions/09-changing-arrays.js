@@ -1,8 +1,3 @@
-/**
- * TITLE:
- * Changing Arrays
- */
-
 // Create an array
 let arr = [
     "Francis", "Noey", "Norraine"

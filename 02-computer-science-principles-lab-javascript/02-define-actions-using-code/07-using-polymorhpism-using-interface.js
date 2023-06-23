@@ -1,9 +1,4 @@
 /**
- * TITLE:
- * Use Polymorphism Using Interfaces
- */
-
-/**
  * SECTION:
  * Using Polymorphism
  */

@@ -1,8 +1,3 @@
-/**
- * TITLE:
- * Variables and Scope
- */
-
 // Variable outside of a function
 let a = 5;
 
@@ -30,5 +25,3 @@ function insideOtherFunction() {
     console.log("Outside Function: " + a); // 5
     console.log("Inside Function: " + b); // undefined
 }
-
-
