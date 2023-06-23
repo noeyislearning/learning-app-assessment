@@ -1,9 +1,4 @@
 /**
- * TITLE:
- * Create Conditional Tests/Statements
- */
-
-/**
  * SECTION:
  * Conditional Tests/Statements
  */
@@ -11,21 +6,20 @@
 /**
  * EXERCISE:
  * 1. Age Checker
+ * 
+ * TASKS:
+ * 1. Create a variable named `age` and assign it a value of `21`.
+ * 2. Create an `if` statement that checks if the `age` is greater than or equal to `21`.
+ * 3. If the condition evaluates to `true`, display a message that says `"You may enter."`.
+ * 4. Create an `else if` statement that checks if the `age` is equal to `18`.
+ * 5. If the condition evaluates to `true`, display a message that says `"You may enter with a parent."`.
+ * 6. Create an `else` statement that checks if the `age` is less than `18`.
+ * 7. If the condition evaluates to `true`, display a message that says `"You may not enter."`.
  */
 
-
-// Exercise 1
-// Tasks:
-// 1. Create a variable named `age` and assign it a value of `21`.
-// 2. Create an `if` statement that checks if the `age` is greater than or equal to `21`.
-// 3. If the condition evaluates to `true`, display a message that says `"You may enter."`.
-// 4. Create an `else if` statement that checks if the `age` is equal to `18`.
-// 5. If the condition evaluates to `true`, display a message that says `"You may enter with a parent."`.
-// 6. Create an `else` statement that checks if the `age` is less than `18`.
-// 7. If the condition evaluates to `true`, display a message that says `"You may not enter."`.
-
+// Define a function named `ageChecker` that performs the age checking task
 function ageChecker() {
-    // Initialize the variable `age` and assign it a value of `21`.
+    // Create a variable named `age` and assign it a value of `21`.
     let age = 21;
 
     // Create an `if` statement that checks if the `age` is greater than or equal to `21`.
@@ -41,8 +35,9 @@ function ageChecker() {
         // If the condition evaluates to `true`, display a message that says `"You may not enter."`.
         console.log("You may not enter.");
     }
-};
+}
 
+// Call the `ageChecker` function to perform the age checking task
 ageChecker();
 
 /**
@@ -58,4 +53,3 @@ ageChecker();
 // `>=` -> Greater than or equal to
 // `<` -> Less than
 // `<=` -> Less than or equal to
-

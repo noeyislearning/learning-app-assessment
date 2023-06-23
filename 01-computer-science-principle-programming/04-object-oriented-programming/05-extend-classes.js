@@ -1,9 +1,4 @@
 /**
- * TITLE
- * Extend Classes
- */
-
-/**
  * SECTION:
  * Classes
  */
@@ -17,6 +12,7 @@
 // Tasks:
 // 1. Create a class called BookReview that extends the MovieReview class.
 
+// Define a class called `MovieReview` with properties for `title`, `body`, `author`, and `starRating`.
 class MovieReview {
     constructor(title, body, author, starRating) {
         this.title = title;
@@ -25,46 +21,50 @@ class MovieReview {
         this.starRating = starRating;
     }
 
-    // @method: preview that returns the first 50 characters from the body.
+    // Define a method called `preview` that returns the first 50 characters of the `body` property.
     preview() {
         return this.body.substring(0, 50);
     }
 
-    // @method: header that returns the title, author, and starRating properties in a string like so: "Movie Review: Batman - 5 stars".
+    // Define a method called `header` that returns a string with the `title`, `author`, and `starRating` properties.
     header() {
         return `Movie Review: ${this.title} - ${this.starRating} stars`;
     }
 
-    // @method: toString that returns the result of calling the header, then preview methods, separated by a new line.
+    // Define a method called `toString` that returns a string with the result of calling the `header` and `preview` methods.
     toString() {
         return `${this.header()}\n${this.preview()}`;
     }
 
-    // @method: Getting the value of starRating and setting the value of starRating, and having a condition that if the value is less than 1, it will be 1, and if the value is more than 5, it will be 5.
-    // @getter: starRating
+    // Define a getter and setter for the `starRating` property.
     get starRating() {
         return this._starRating;
     }
 
-    // @setter: starRating
     set starRating(value) {
+        // If the value is less than 1, set it to 1.
         if (value < 1) {
             this._starRating = 1;
+        // If the value is greater than 5, set it to 5.
         } else if (value > 5) {
             this._starRating = 5;
+        // Otherwise, set it to the value passed in.
         } else {
             this._starRating = value;
         }
     }
 }
 
+// Define a class called `BookReview` that extends the `MovieReview` class.
 class BookReview extends MovieReview {
     constructor(title, body, author, starRating, bookTitle) {
+        // Call the constructor of the `MovieReview` class and pass in the `title`, `body`, `author`, and `starRating` properties.
         super(title, body, author, starRating);
+        // Set the `bookTitle` property.
         this.bookTitle = bookTitle;
     }
 
-    // @method: header that returns the title, author, and starRating properties in a string like so: "Book Review: Batman - 5 stars".
+    // Override the `header` method to include the `bookTitle` property in the output.
     header() {
         return `Book Review: ${this.bookTitle} - ${this.starRating} stars`;
     }

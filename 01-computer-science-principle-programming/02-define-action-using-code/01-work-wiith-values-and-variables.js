@@ -1,12 +1,9 @@
 /** 
- * TITLE: 
- * Working With Values and Variables 
- */
-
-/** 
  * SECTION: 
  * Variables and their values 
  */
+
+// Declare and initialize variables of different data types
 let three = 3; // number
 let float = 3.14; // float
 let double = 3.141592653589793; // double
@@ -24,9 +21,12 @@ let symbol = Symbol("symbol"); // symbol
  * SECTION: 
  * Arithmetic Expressions 
  */
-// Addition
+
+// Declare and initialize variables for arithmetic expressions
 let ari_a = 1;
 let ari_b = 2;
+
+// Addition
 let ari_c = ari_a + ari_b; // 3 (Sum)
 
 // Subtraction
@@ -68,9 +68,12 @@ let ari_x = --ari_v; // -1 (Prefix)
  * SECTION:
  * Comparison Expressions
  */
-// Equal
+
+// Declare and initialize variables for comparison expressions
 let com_a = 1;
 let com_b = 2;
+
+// Equal
 let com_c = com_a == com_b; // false
 
 // Not Equal
@@ -112,8 +115,8 @@ let com_x = com_v !== com_w; // true
  * SECTION:
  * String Concatenation
 */
-// Concatenation
+
+// Declare and initialize variables for string concatenation
 let con_firstName = "Francis";
 let con_lastName = "Ignacio";
 let con_fullName = con_firstName + " " + con_lastName; // Francis Ignacio
-

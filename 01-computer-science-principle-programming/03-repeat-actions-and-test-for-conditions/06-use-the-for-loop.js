@@ -1,9 +1,4 @@
-/**
- * TITLE:
- * Use the For Loop 
- */
-
-/**
+/** 
  * SECTION:
  * For Loop
  */
@@ -19,7 +14,9 @@
 // Exercise 1
 // Tasks:
 // 1. Create a for loop that logs "Hi" 3 times to the console.
+
 function createForLoops() {
+    // Create a for loop that logs "Hi" 3 times to the console.
     for (let i = 0; i < 3; i++) {
         console.log("Hi");
     }
@@ -30,7 +27,9 @@ createForLoops(); // Output: Hi Hi Hi
 // Exercise 2
 // Tasks:
 // 1. Create a fizzbuzz loop that logs the numbers 1 to 100 to the console.
+
 function createFizzBuzzLoops() {
+    // Create a fizzbuzz loop that logs the numbers 1 to 100 to the console.
     for (let i = 1; i <= 100; i++) {
         if (i % 15 === 0) {
             console.log("FizzBuzz");
@@ -49,7 +48,9 @@ createFizzBuzzLoops(); // Output: 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 
 // Exercise 3
 // Tasks:
 // 1. Create a loop that logs the numbers 1 to 100 to the console.
+
 function createOneToHundredLoops() {
+    // Create a loop that logs the numbers 1 to 100 to the console.
     for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
@@ -60,7 +61,9 @@ createOneToHundredLoops(); // Output: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 ...
 // Exercise 4
 // Tasks:
 // 1. Create a loop that logs the numbers 100 to 1 to the console.
+
 function createHundredToOneLoops() {
+    // Create a loop that logs the numbers 100 to 1 to the console.
     for (let i = 100; i >= 1; i--) {
         console.log(i);
     }

@@ -1,8 +1,3 @@
-/**
- * TITLE:
- * Custom Functions With Parameters
- */
-
 /** 
  * SECTION:
  * Functions
@@ -12,6 +7,7 @@
  * EXERCISE:
  * 1. Saying Hello + the Name Function
  */
+
 // 1. Define a function named `sayHello` that takes a parameter named `name` and returns a string that says hello to the name that was passed in.
 function sayHello(name) {
     return "Hello " + name + "!";

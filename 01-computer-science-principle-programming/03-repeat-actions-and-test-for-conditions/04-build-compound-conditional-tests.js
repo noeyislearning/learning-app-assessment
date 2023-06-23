@@ -1,9 +1,4 @@
 /**
- * TITLE:
- * Build Compound/Complex Conditional Tests/Statements
- */
-
-/**
  * SECTION:
  * Compound/Complex Conditional Tests/Statements
  */

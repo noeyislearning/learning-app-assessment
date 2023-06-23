@@ -1,11 +1,6 @@
 /**
- * TITLE:
- * Variables and Scope
- */
-
-/** 
  * SECTION:
- * Variables
+ * Variables and their Scope
  */
 
 // Global Scope
@@ -13,7 +8,7 @@ let globalVariable = "This is a global variable";
 
 console.log(globalVariable); // This is a global variable
 
-// Fucntion Scope
+// Function Scope
 function functionScope() {
     let functionVariable = "This is a function variable";
 
