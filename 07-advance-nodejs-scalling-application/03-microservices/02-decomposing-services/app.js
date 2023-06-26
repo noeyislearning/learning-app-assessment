@@ -8,10 +8,10 @@ const { LocalStorage } = require('node-localstorage') // LocalStorage is a modul
 const localStorage = new LocalStorage('./data')
 
 // Define functions to load and save shows and reservations from LocalStorage
-const loadShows = () => JSON.parse(localStorage.getItem('shows') || '[]')
-const saveShows = shows => localStorage.setItem('shows', JSON.stringify(shows, null, 2))
-const loadReservations = () => JSON.parse(localStorage.getItem('reservations') || '{}')
-const saveReservations = reservations => localStorage.setItem('reservations', JSON.stringify(reservations, null, 2))
+const loadShows = () => JSON.parse(localStorage.getItem('../db/shows/shows') || '[]')
+const saveShows = shows => localStorage.setItem('../db/shows/shows', JSON.stringify(shows, null, 2))
+const loadReservations = () => JSON.parse(localStorage.getItem('../db/reservations/reservations') || '{}')
+const saveReservations = reservations => localStorage.setItem('../db/reservations/reservations', JSON.stringify(reservations, null, 2))
 
 // Create a new instance of Express
 const app = express()

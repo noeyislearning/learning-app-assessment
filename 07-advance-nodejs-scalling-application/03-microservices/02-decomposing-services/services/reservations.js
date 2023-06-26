@@ -5,8 +5,8 @@ const { LocalStorage } = require('node-localstorage')
 
 const localStorage = new LocalStorage('./db/reservations/reservations')
 
-const loadReservations = () => JSON.parse(localStorage.getItem('reservations') || '{}')
-const saveReservations = reservations => localStorage.setItem('reservations', JSON.stringify(reservations, null, 2))
+const loadReservations = () => JSON.parse(localStorage.getItem('../db/reservations/reservations') || '{}')
+const saveReservations = reservations => localStorage.setItem('../db/reservations/reservations', JSON.stringify(reservations, null, 2))
 
 const app = express()
     .use(cors())

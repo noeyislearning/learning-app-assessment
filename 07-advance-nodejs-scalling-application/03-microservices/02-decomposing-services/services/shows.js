@@ -5,8 +5,8 @@ const { LocalStorage } = require('node-localstorage')
 
 const localStorage = new LocalStorage('./db/shows/shows')
 
-const loadShows = () => JSON.parse(localStorage.getItem('shows') || '[]')
-const saveShows = shows => localStorage.setItem('shows', JSON.stringify(shows, null, 2))
+const loadShows = () => JSON.parse(localStorage.getItem('../db/shows/shows') || '[]')
+const saveShows = shows => localStorage.setItem('../db/shows/shows', JSON.stringify(shows, null, 2))
 
 const app = express()
     .use(cors())
