@@ -1,3 +1,5 @@
+## CLUSTER (PM2)
+
 # 1. Install pm2
 npm install pm2 -g # -g for global
 
@@ -27,3 +29,16 @@ pm2 monit
 
 # 10. Reload all running instances
 pm2 reload app
+
+# 11. Get logs of all running instances
+pm2 logs
+
+
+## LOADTEST
+
+# 1. Install loadtest
+npm install loadtest -g # -g for global
+
+# 2. Run loadtest
+loadtest -n 1000 -c 100 http://localhost:3000/ # -n for number of requests, -c for number of concurrent requests
+
