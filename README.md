@@ -16,4 +16,4 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
 - **[06 Advance Node.js](https://github.com/noeyislearning/learning-app-assessment/tree/main/06-advance-nodejs)**
 
-- **[07 Advance Node.js: Scalling Application](https://github.com/noeyislearning/learning-app-assessment/tree/main/07-advance-nodejs-scalling-application)**
+- **[07 Advance Node.js: Scaling Application](https://github.com/noeyislearning/learning-app-assessment/tree/main/07-advance-nodejs-scaling-application)**
