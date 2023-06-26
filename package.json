@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "loadtest": "^5.2.0",
-    "multiparty": "^4.2.3"
+    "multiparty": "^4.2.3",
+    "pm2": "^5.3.0"
   }
 }
