@@ -2,6 +2,7 @@
   "dependencies": {
     "loadtest": "^5.2.0",
     "multiparty": "^4.2.3",
+    "node-localstorage": "^2.2.1",
     "pm2": "^5.3.0"
   }
 }
