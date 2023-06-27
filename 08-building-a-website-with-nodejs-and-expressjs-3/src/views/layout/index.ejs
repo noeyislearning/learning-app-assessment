@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= siteName %></title>
+  <%- include(`../configs/styles`) %>
+  <%- include(`../configs/meta`) %>
+</head>
+<body>
+  <header>
+    <div class="jumbotron d-none d-sm-block"></div>
+    <%- include(`./partials/navigation`) %>
+  </header>
+  <%- include(`../pages/${template}`) %>
+  <%- include(`../configs/scripts`) %>
+</body>
+</html>
