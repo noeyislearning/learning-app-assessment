@@ -1,12 +1,29 @@
 {
+  "name": "learning-app-assessment",
+  "version": "1.0.0",
+  "description": "Learning App Assessment, a personal dev. notes about the courses I took in the Learning App. These are all personalized and it has sort of detailed explanation per topics/course. I hope this will help you in your journey to become a better developer.",
+  "main": "server.js",
+  "scripts": {
+    "dev:08": "cd 08-building-a-website-with-nodejs-and-expressjs-3 && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "loadtest": "^5.2.0",
     "multiparty": "^4.2.3",
     "node-localstorage": "^2.2.1",
-    "pm2": "^5.3.0"
+    "pm2": "^2.10.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "nodemon": "^1.14.9"
   }
 }
