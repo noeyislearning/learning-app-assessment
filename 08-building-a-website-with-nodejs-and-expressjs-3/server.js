@@ -3,6 +3,7 @@ const path = require("path");
 const session = require("express-session");
 const createError = require("http-errors");
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
 dotenv.config();
 
 // Directory for static files
@@ -37,18 +38,15 @@ app.use(session({
   },
 }));
 
+// Body Parser
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // EJS
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, `../${dirPath}/src/views`));
 
 // Serve static files
 app.use(express.static(path.join(__dirname, `../${dirPath}/src/assets`)));
-
-app.get("/throw", (req, res, next) => {
-  setTimeout(() => {
-    return next(new Error("Something went wrong."));
-  }, 500);
-});
 
 // Global Variable
 app.locals.siteName = "ROUX Meetups";
@@ -76,7 +74,6 @@ app.use((err, req, res, next) => {
   res.locals.message = err.message;
   const status = err.status || 500;
   res.locals.status = status;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
   res.status(status);
   return res.render("error");
 });
