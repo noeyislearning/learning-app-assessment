@@ -17,3 +17,5 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 - **[06 Advance Node.js](https://github.com/noeyislearning/learning-app-assessment/tree/main/06-advance-nodejs)**
 
 - **[07 Advance Node.js: Scaling Application](https://github.com/noeyislearning/learning-app-assessment/tree/main/07-advance-nodejs-scaling-application)**
+
+- **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
