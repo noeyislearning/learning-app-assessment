@@ -7,7 +7,7 @@ const speakerRoute = require("./speakers");
 
 module.exports = (feedbackService, speakersService) => {
 
-  router.get("/", async (req, res) => {
+  router.get("/", async (req, res, next) => {
 
     if(!req.session.visitcount) {
       req.session.visitcount = 0;
@@ -17,18 +17,23 @@ module.exports = (feedbackService, speakersService) => {
 
     console.log(`Session ID: ${req.session.id}, Visit Count: ${req.session.visitcount}`);
 
-    const topSpeakers = await speakersService.getList();
-    const artwork = await speakersService.getAllArtwork();
+    try {
+      const topSpeakers = await speakersService.getList();
+      const artwork = await speakersService.getAllArtwork();
 
-    res.render(
-      "layout/index",
-      { 
-        pageTitle: 'Welcome',
-        template: "index",
-        topSpeakers,
-        artwork
-      },
-    )
+      res.render(
+        "layout/index",
+        { 
+          pageTitle: 'Welcome',
+          template: "index",
+          topSpeakers,
+          artwork
+        },
+      )
+    } 
+    catch(err) {
+      return next(err);
+    }
   });
 
   // pass the services as an object

@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const session = require("express-session");
+const createError = require("http-errors");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -43,6 +44,12 @@ app.set("views", path.join(__dirname, `../${dirPath}/src/views`));
 // Serve static files
 app.use(express.static(path.join(__dirname, `../${dirPath}/src/assets`)));
 
+app.get("/throw", (req, res, next) => {
+  setTimeout(() => {
+    return next(new Error("Something went wrong."));
+  }, 500);
+});
+
 // Global Variable
 app.locals.siteName = "ROUX Meetups";
 app.use(async (req, res, next) => {
@@ -60,6 +67,19 @@ app.use("/", routes(
   feedbackService,
   speakersService
 ));
+
+// Error Handling
+app.use((err, req, res, next) => {
+  return next(createError(404, "File not found."));
+});
+app.use((err, req, res, next) => {
+  res.locals.message = err.message;
+  const status = err.status || 500;
+  res.locals.status = status;
+  res.locals.error = req.app.get("env") === "development" ? err : {};
+  res.status(status);
+  return res.render("error");
+});
 
 // Server listening
 app.listen(PORT, () => {
