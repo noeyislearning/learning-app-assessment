@@ -1,0 +1,23 @@
+
+/* ----------- */
+html {
+  font-family: Lora, Georgia, serif; 
+  margin: 3em;
+  font-size: 200%;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: 0;
+  color: #98136b;
+}
+img {
+  width: 75px;
+  height: 100px;
+  margin-right: 1.4rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 Responsive Pictures</title>
+</head>
+<body> 
+  
+  <picture> <!-- This tag contains a set of images to display, with different sources and sizes -->
+    <source media="(min-width:600px)" 
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg"> <!-- This line sets the source URL for the image to display when the viewport width is at least 600 pixels -->
+    <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg"> <!-- This line sets the source URL for the image to display when the viewport width is less than 600 pixels -->
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" 
+      width="480" height="360"
+      alt="black dog lying in the sun" > <!-- This line displays an image with the source URL "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg". The "alt" attribute provides alternative text for the image, which is "black dog lying in the sun". The "width" attribute sets the width of the image to 480 pixels, and the "height" attribute sets the height of the image to 360 pixels. -->
+  </picture>
+
+
+  <picture> <!-- This tag contains a set of images to display, with different sources and sizes -->
+    <source media="(min-width:600px)"
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg  480w, 
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg  720w,
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-960.jpg  960w, 
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1440.jpg 1440w, 
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1920.jpg 1920w" > <!-- This line sets the source URLs for the image to display at different viewport widths -->
+    <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg 320w,
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-480.jpg 480w, 
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-720.jpg 720w,
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-960.jpg 960w" > <!-- This line sets the source URLs for the image to display at different viewport widths -->
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" 
+         alt="smiling black dog"
+         height="360px" width="480px"> <!-- This line displays an image with the source URL "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg". The "alt" attribute provides alternative text for the image, which is "smiling black dog". The "width" attribute sets the width of the image to 480 pixels, and the "height" attribute sets the height of the image to 360 pixels. -->
+  </picture>
+
+  <!-- 
+    NOTES:
+    - The <picture> tag is used to define a container for multiple images.
+    - The <source> tag is used to specify multiple media resources for the <picture>, and to provide images for different media scenarios (responsive images).
+    - The <img> tag is used to provide an image fallback for the <picture> element.
+    - The <source> element must have a srcset attribute, and either a type or a media attribute.
+    - The <img> element must have a src attribute, and either an alt, title, or longdesc attribute.
+    - The <source> element must come before the <img> element.
+    - The <picture> element is not supported in Internet Explorer 11 and earlier versions.
+   -->
+
+</body>
+</html>

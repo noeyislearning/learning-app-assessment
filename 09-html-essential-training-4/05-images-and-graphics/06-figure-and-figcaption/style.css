@@ -1,0 +1,18 @@
+
+/* ----------- */
+html {
+  font-family: Lora, Georgia, serif; 
+  margin: 2em;
+  font-size: 170%;
+  line-height: 1.5;
+}
+figure {
+  
+}
+figcaption {
+  font-style: italic;
+}
+img {
+  width: 100%;
+  height: auto;
+}
