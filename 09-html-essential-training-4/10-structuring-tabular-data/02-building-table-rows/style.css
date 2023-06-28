@@ -1,0 +1,23 @@
+html {
+  margin: 2em;
+  font-size: 160%;
+  line-height: 1.5;
+}
+table.styled {
+  border-collapse: collapse;
+  text-align: left;
+  font-family: Avenir, Roboto, Heveltica, sans-serif; 
+}
+.styled th {
+  text-align: inherit;
+  text-transform: uppercase;
+}
+.styled th, .styled td {
+  border: 1px solid #999;
+  padding: 0.5em 0.75rem 0.2em;
+  vertical-align: top;
+}
+.styled img {
+  max-width: 100%;
+  height: auto;
+}

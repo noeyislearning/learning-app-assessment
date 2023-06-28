@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 HTML Form Basics</title> 
+</head>
+<body> <!-- This tag contains the visible content of the document -->
+  <main> <!-- This tag defines the main content of the document -->
+    <section> <!-- This tag defines a section of the document -->
+      <h2>Our Form</h2> <!-- This tag defines a level 2 heading with the text "Our Form" -->
+      <form action="success.html" method="get"> <!-- This tag defines a form with the action attribute set to "success.html" and the method attribute set to "get" -->
+        <div> <!-- This tag defines a division -->
+          <label for="name">Name</label> <!-- This tag defines a label with the text "Name" and the "for" attribute set to "name" -->
+          <input name="name" id="name" type="text" value="Jen"> <!-- This tag defines an input field with the name attribute set to "name", the id attribute set to "name", the type attribute set to "text", and the default value set to "Jen" -->
+        </div>
+        <div> <!-- This tag defines a division -->
+          <label for="email">Email</label> <!-- This tag defines a label with the text "Email" and the "for" attribute set to "email" -->
+          <input name="email" id="email" type="email" placeholder="me@example.com" required> <!-- This tag defines an input field with the name attribute set to "email", the id attribute set to "email", the type attribute set to "email", the placeholder attribute set to "me@example.com", and the required attribute set to true -->
+        </div>
+        <button type="submit">Sign up</button> <!-- This tag defines a button with the text "Sign up" and the type attribute set to "submit" -->
+      </form>
+    </section>
+  </main>
+
+  <!-- 
+    NOTES:
+    - The "for" attribute in the label tag must match the "id" attribute in the input tag.
+    - The "name" attribute in the input tag is used to identify the input field when the form is submitted.
+    - The "placeholder" attribute in the input tag is used to provide a hint to the user about what to enter in the input field.
+    - The "required" attribute in the input tag is used to require the user to enter a value in the input field before the form can be submitted.
+    - The "type" attribute in the input tag is used to specify the type of input field.
+    - The "value" attribute in the input tag is used to set the default value of the input field.
+    - The "action" attribute in the form tag is used to specify the URL of the page that will process the form data.
+    - The "method" attribute in the form tag is used to specify the HTTP method to use when submitting the form data.
+    - The "type" attribute in the button tag is used to specify the type of button.
+   -->
+</body>
+</html>
