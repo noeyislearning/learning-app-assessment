@@ -1,0 +1,30 @@
+body {
+  color: #343434;
+}
+
+img {
+  width: 300px;
+}
+
+/* Profile */
+header {
+  background-color: #f2f2f2;
+  color: #f7fff7
+}
+
+/* Projects */
+.projects {
+  background-color: #f2f2f2;
+  color: #f7fff7
+}
+
+/* Work Experience */
+.work-experience {
+  background- : #f2f2f2;
+  color: #f7fff7
+}
+
+footer {
+  background-color: #230101;
+  color: #f7fff7
+}

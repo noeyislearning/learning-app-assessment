@@ -1,0 +1,28 @@
+* {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: green;
+}
+
+.example {
+  color: purple; 
+}
+
+.example2 {
+  background-color: yellow;
+}
+
+.example.example2 {
+  font-size: 500px;
+}
+
+#example {
+  font-size: 100px;
+}
+

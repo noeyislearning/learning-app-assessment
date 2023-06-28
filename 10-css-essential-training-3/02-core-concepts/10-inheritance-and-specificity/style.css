@@ -1,0 +1,25 @@
+section {
+  font-family: avenir, sans-serif;
+  font-size: 30px;
+  color: orange;
+}
+* {
+  color: lightblue;
+}
+p {
+  color: green;
+}
+.example {
+  color: black;
+}
+#example {
+  color: purple;
+}
+section p {
+  color: lightgreen;
+}
+
+
+
+
+

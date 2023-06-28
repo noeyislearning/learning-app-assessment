@@ -1,0 +1,16 @@
+/* Note: Links are blue by default */
+a {
+    color: black;
+}
+section a {
+  color: green;
+}
+.container a {
+  color: orange;
+}
+section p a {
+  color: pink;
+}
+.container p a {
+  color: green;
+}
