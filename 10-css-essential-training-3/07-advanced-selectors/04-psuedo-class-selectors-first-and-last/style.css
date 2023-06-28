@@ -1,0 +1,15 @@
+p {
+  font-size: 20px;
+}
+p:first-child {
+  color: red;
+}
+p:last-child {
+  color: blue;
+}
+p:first-of-type {
+  color: green;
+}
+p:last-of-type {
+  color: orange;
+}
