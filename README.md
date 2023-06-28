@@ -44,6 +44,10 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
   - A comprehensive guide on understanding and applying Cascading Style Sheets (CSS) for web design. It is designed to equip trainees with the knowledge and skills to style documents consistently, use advanced CSS selectors, understand the box model, work with typography, layout designs using Float, Flexbox, and Grid systems, and develop fluid and responsive layouts.
 
+- **[11 Git Essential Training: The Basics](https://github.com/noeyislearning/learning-app-assessment/tree/main/11-git-essential-training-the-basics)**
+
+  - A comprehensive tutorial that navigates the trainee through the functionalities and applications of the Git version control software. This guide will be helpful for beginners starting their journey in coding as well as professionals looking to brush up their skills or explore advanced features of Git.
+
 ## Usage
 
 ### For **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
