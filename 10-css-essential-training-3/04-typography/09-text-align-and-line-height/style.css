@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  text-align: right;
+  text-align: left;
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 16px;
+}
