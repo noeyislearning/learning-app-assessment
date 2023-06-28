@@ -19,3 +19,19 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 - **[07 Advance Node.js: Scaling Application](https://github.com/noeyislearning/learning-app-assessment/tree/main/07-advance-nodejs-scaling-application)**
 
 - **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
+
+- **[09 HTML Essential Training 4](https://github.com/noeyislearning/learning-app-assessment/tree/main/09-html-essential-training-4)**
+
+## Usage
+
+### For **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
+
+To run the server for this project, you need to install the dependencies first.
+
+```bash
+# Install dependencies
+npm install
+
+# Run in development
+npm run dev:08
+```
