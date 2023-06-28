@@ -1,0 +1,9 @@
+.background {
+  max-width: 600px;
+  padding: 100px;
+  background-color: lightblue;
+  background-image: url(https://unsplash.it/550/150?image=703);
+  background-repeat: no-repeat;
+  background-position: 100px;
+  background-size: 100%;
+}
