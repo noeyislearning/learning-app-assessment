@@ -1,0 +1,57 @@
+html {
+  margin: 2em;
+  font-size: 180%;
+}
+
+  
+html {
+  font-family: avenir;
+  line-height: 1.5;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  gap: 1rem;
+  border: 4px solid rebeccapurple;
+  margin: 4em 0;
+  padding: 0.25em 1em;
+}
+.navbar li {
+  display: block; 
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+footer {
+  font-size: 70%;
+}
+a {
+  text-decoration-color: teal;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: cyan;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+a::after {
+  content: '|';
+  padding-left: 0.8em;
+  padding-right: 0.4em;
+  color: teal;
+}
+a:last-child::after {
+  content:'';
+}

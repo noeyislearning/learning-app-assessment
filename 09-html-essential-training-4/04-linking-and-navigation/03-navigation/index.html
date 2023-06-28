@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>03 Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <nav role="navigation" aria-label="main menu"> <!-- This line creates a navigation bar with the role "navigation" and the aria-label "main menu" -->
+    <ul class="navbar"> <!-- This line creates an unordered list with the class "navbar" -->
+      <li><a href="/">Home</a></li> <!-- This line creates a list item with a hyperlink to the homepage with the text "Home" -->
+      <li><a href="/people">People</a></li> <!-- This line creates a list item with a hyperlink to the people page with the text "People" -->
+      <li><a href="/prices">Prices</a></li> <!-- This line creates a list item with a hyperlink to the prices page with the text "Prices" -->
+      <li><a href="/contact">Contact</a></li> <!-- This line creates a list item with a hyperlink to the contact page with the text "Contact" -->
+    </ul>
+  </nav>
+
+   
+  <nav role="breadcrumb">
+    <ol class="breadcrumbs">
+      <li><a href="/">Home</a></li>
+      <li><a href="/people">Blog</a></li>
+      <li><a href="/contact">March</a></li>
+      <li>March 9th Update</li>
+    </ol>
+  </nav>
+
+  <footer>
+    <a href="/about/privacy">Privacy Policy</a>
+    <a href="/about/legal">Terms of Service</a>
+  </footer>  
+
+</body>
+</html>
