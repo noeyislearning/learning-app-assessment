@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>03 Captions and Subtitles</title> 
+</head>
+<body> 
+  <video controls> <!-- This tag displays a video player with controls -->
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.vp9.webm" 
+      type="video/webm"> <!-- This line sets the source URL for the video file in the WebM format -->
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4" 
+      type="video/mp4"> <!-- This line sets the source URL for the video file in the MP4 format -->
+    
+    <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt"
+          kind="captions"
+          label="English"
+          srclang="en"
+          default> <!-- This line sets the source URL for the captions file in the WebVTT format. The "kind" attribute specifies that the file contains captions, the "label" attribute specifies the label for the captions, the "srclang" attribute specifies the language of the captions, and the "default" attribute specifies that the captions should be enabled by default. -->
+    
+    <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.es-la.es.vtt"
+          kind="subtitles"
+          label="Español"
+          srclang="es"> <!-- This line sets the source URL for the subtitles file in the WebVTT format. The "kind" attribute specifies that the file contains subtitles, the "label" attribute specifies the label for the subtitles, and the "srclang" attribute specifies the language of the subtitles. -->
+    
+    <p>This would be a video of a moonwalk, if your device supported playing this video.</p> <!-- This line displays a message if the browser does not support the video element -->
+  </video>
+
+  <!-- 
+    NOTES:
+    - The track element is used to specify captions and subtitles for a video.
+    - The track element has a number of attributes that can be used to control the captions and subtitles.
+   -->
+</body>
+</html>

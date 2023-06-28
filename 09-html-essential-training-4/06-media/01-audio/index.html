@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 Audio</title>
+</head>
+<body> <!-- This tag contains the visible content of the document -->
+  <audio controls> <!-- This tag displays an audio player with controls -->
+    <source src="http://example.com/birds.ogg" type="audio/ogg; codec=opus"> <!-- This line sets the source URL for the audio file in the Ogg format with the Opus codec -->
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3" type="audio/mpeg"> <!-- This line sets the source URL for the audio file in the MP3 format -->
+    Sorry your browser doesn't not support audio. <!-- This line displays a message if the browser does not support the audio element -->
+  </audio>
+
+  <!-- 
+    NOTES:
+    - The audio element is used to embed audio content in a document.
+   -->
+</body>
+</html>
