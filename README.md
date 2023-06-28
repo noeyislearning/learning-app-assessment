@@ -40,6 +40,10 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
   - This document is an in-depth guide to mastering HTML, one of the fundamental languages of the internet. It is divided into 10 main sections, each covering crucial topics such as formatting text, linking and navigation, images and graphics, media, identifying content, and structuring tabular data. The training manual aims to equip learners with practical knowledge to write clean, effective HTML code and build accessible, user-friendly web pages.
 
+- **[10 CSS Essential Training 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/10-css-essential-training-3)**
+
+  - A comprehensive guide on understanding and applying Cascading Style Sheets (CSS) for web design. It is designed to equip trainees with the knowledge and skills to style documents consistently, use advanced CSS selectors, understand the box model, work with typography, layout designs using Float, Flexbox, and Grid systems, and develop fluid and responsive layouts.
+
 ## Usage
 
 ### For **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
