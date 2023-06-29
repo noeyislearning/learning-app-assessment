@@ -4,13 +4,17 @@
   "description": "Learning App Assessment, a personal dev. notes about the courses I took in the Learning App. These are all personalized and it has sort of detailed explanation per topics/course. I hope this will help you in your journey to become a better developer.",
   "main": "server.js",
   "scripts": {
-    "dev:08": "cd 08-building-a-website-with-nodejs-and-expressjs-3 && nodemon server.js"
+    "dev:08": "cd 08-building-a-website-with-nodejs-and-expressjs-3 && nodemon server.js",
+    "dev:12a": "cd 12-database-for-nodejs-developers && cd maxcoin && npm run dev",
+    "dev:12b": "cd 12-database-for-nodejs-developers && cd shopper && npm run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
     "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -22,7 +26,8 @@
     "loadtest": "^5.2.0",
     "multiparty": "^4.2.3",
     "node-localstorage": "^2.2.1",
-    "pm2": "^2.10.4"
+    "pm2": "^2.10.4",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^8.43.0",
