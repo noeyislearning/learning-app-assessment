@@ -24,6 +24,8 @@
     "express-validator": "^7.0.1",
     "http-errors": "^2.0.0",
     "loadtest": "^5.2.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
     "multiparty": "^4.2.3",
     "node-localstorage": "^2.2.1",
     "pm2": "^2.10.4",
