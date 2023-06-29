@@ -11,10 +11,13 @@ class UserService {
 
   static async create(data) {
     const user = new UserModel(data);
-    return user.save();
+    const newUser = await user.save();
+    console.log(`[CREATE] User: ${newUser._id}:`, newUser);
+    return newUser;
   }
 
   static async update(userId, data) {
+    console.info(`[UPDATE] User: ${userId}.`);
     // Fetch the user first
     const user = await UserModel.findById(userId);
     user.email = data.email;
@@ -28,6 +31,7 @@ class UserService {
   }
 
   static async remove(userId) {
+    console.info(`[DELETE] User: ${userId}.`);
     return UserModel.deleteOne({ _id: userId }).exec();
   }
 }
