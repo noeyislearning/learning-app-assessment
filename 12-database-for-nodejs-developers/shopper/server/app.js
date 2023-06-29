@@ -2,6 +2,9 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const Redis = require('ioredis');
+const RedisStore = require('connect-redis')(session);
+
 const routeHandler = require('./routes');
 
 module.exports = (config) => {
@@ -15,7 +18,11 @@ module.exports = (config) => {
   app.use(bodyParser.urlencoded({ extended: false }));
 
   app.set('trust proxy', 1); // trust first proxy
+
   app.use(session({
+    store: new RedisStore({
+      client: config.redis.client,
+    }),
     secret: 'very secret secret to encyrpt session',
     resave: false,
     saveUninitialized: false,
