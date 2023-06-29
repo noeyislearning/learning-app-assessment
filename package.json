@@ -24,6 +24,7 @@
     "express-session": "^1.17.3",
     "express-validator": "^7.0.1",
     "http-errors": "^2.0.0",
+    "ioredis": "^5.3.2",
     "loadtest": "^5.2.0",
     "mongodb": "^5.6.0",
     "mongoose": "^7.3.1",
