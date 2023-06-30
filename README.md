@@ -48,7 +48,7 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
   - A comprehensive tutorial that navigates the trainee through the functionalities and applications of the Git version control software. This guide will be helpful for beginners starting their journey in coding as well as professionals looking to brush up their skills or explore advanced features of Git.
 
-- **[12 Database For NodeJS Developers (Incomplete)](https://github.com/noeyislearning/learning-app-assessment/tree/main/12-database-for-nodejs-developers)**
+- **[12 Database For NodeJS Developers](https://github.com/noeyislearning/learning-app-assessment/tree/main/12-database-for-nodejs-developers)**
 
   - This course presents a comprehensive walkthrough on how Node.js developers can effectively interact with various types of databases. From relational databases to NoSQL and key-value stores, this document provides knowledge, practical exercises, and useful examples for the real-world application of database concepts in Node.js.
 
