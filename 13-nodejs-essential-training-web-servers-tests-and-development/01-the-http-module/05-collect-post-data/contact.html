@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send Alex a Message</title>
+    <style>
+      label,
+      button {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Send Alex a message</h1>
+    <form method="POST" action="/">
+      <label>Your name</label>
+      <input type="text" name="name" required />
+      <label>Your email</label>
+      <input type="email" name="email" required />
+      <label>Your message</label>
+      <textarea name="message" rows="5" required></textarea>
+      <button>Send Message</button>
+    </form>
+  </body>
+</html>
