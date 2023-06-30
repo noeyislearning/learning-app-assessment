@@ -7,7 +7,8 @@
     "dev:08": "cd 08-building-a-website-with-nodejs-and-expressjs-3 && nodemon server.js",
     "dev:12a": "cd 12-database-for-nodejs-developers && cd maxcoin && npm run dev",
     "dev:12b": "cd 12-database-for-nodejs-developers && cd shopper && npm run dev",
-    "dev:13:04:01": "cd 13-nodejs-essential-training-web-servers-tests-and-development/04-websockets/01-create-a-websocket && npm run serve"
+    "dev:13:04:01": "cd 13-nodejs-essential-training-web-servers-tests-and-development/04-websockets/01-create-a-websocket && npm run serve",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -42,6 +43,7 @@
     "single-line-log": "^1.1.2",
     "socket.io-client": "^4.7.1",
     "socketio": "^1.0.0",
+    "supertest": "^6.3.3",
     "tiny-timer": "^1.6.0",
     "ws": "^8.13.0"
   },
