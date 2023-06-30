@@ -39,6 +39,8 @@
     "sequelize": "^6.32.1",
     "serve": "^14.2.0",
     "single-line-log": "^1.1.2",
+    "socket.io-client": "^4.7.1",
+    "socketio": "^1.0.0",
     "tiny-timer": "^1.6.0",
     "ws": "^8.13.0"
   },
