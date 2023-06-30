@@ -27,6 +27,7 @@
     "express-validator": "^7.0.1",
     "http-errors": "^2.0.0",
     "ioredis": "^5.3.2",
+    "jest": "^29.5.0",
     "loadtest": "^5.2.0",
     "minimist": "^1.2.8",
     "mongodb": "^5.6.0",
