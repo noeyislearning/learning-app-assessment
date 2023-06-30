@@ -69,9 +69,9 @@ class MongoBackend {
     console.log("*************************")
     console.info("Inserting data into MongoDB.");
     console.time("MongoDB Data Insertion");
-    // const insertResult = await this.insert();
+    const insertResult = await this.insert();
     console.timeEnd("MongoDB Data Insertion");
-    // console.info(`Inserted ${insertResult.insertedCount} documents into MongoDB.`);
+    console.info(`Inserted ${insertResult.insertedCount} documents into MongoDB.`);
     console.log("*************************\n")
 
     console.log("*************************")

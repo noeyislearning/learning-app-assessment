@@ -1,12 +1,14 @@
 const express = require("express");
 
-module.exports = () => {
+const ItemService = require("../../services/ItemService");
+const BasketService = require("../../services/BasketService");
+const OrderService = require("../../services/OrderService");
+
+module.exports = (config) => {
   const router = express.Router();
+  const order = new OrderService(config.mysql.client);
 
   router.get("/", async (req, res) => {
-    return res.render("basket", {});
-
-    /*
     if (!res.locals.currentUser) {
       req.session.messages.push({
         type: "warning",
@@ -30,13 +32,9 @@ module.exports = () => {
       );
     }
     return res.render("basket", { items });
-    */
   });
 
-  router.get("/remove/:itemId", async (req, res, next) => {
-    return next("Not implemented");
-
-    /*
+  router.get("/remove/:itemId", async (req, res) => {
     if (!res.locals.currentUser) {
       req.session.messages.push({
         type: "warning",
@@ -65,12 +63,9 @@ module.exports = () => {
     }
 
     return res.redirect("/basket");
-    */
   });
 
-  router.get("/buy", async (req, res, next) => {
-    return next("Not implemented");
-    /*
+  router.get("/buy", async (req, res) => {
     if (!res.locals.currentUser) {
       req.session.messages.push({
         type: "warning",
@@ -131,7 +126,6 @@ module.exports = () => {
       console.error(err);
       return res.redirect("/basket");
     }
-    */
   });
 
   return router;
