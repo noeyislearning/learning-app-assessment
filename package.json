@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Learning App Assessment, a personal dev. notes about the courses I took in the Learning App. These are all personalized and it has sort of detailed explanation per topics/course. I hope this will help you in your journey to become a better developer.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "dev:08": "cd 08-building-a-website-with-nodejs-and-expressjs-3 && nodemon server.js",
     "dev:12a": "cd 12-database-for-nodejs-developers && cd maxcoin && npm run dev",
     "dev:12b": "cd 12-database-for-nodejs-developers && cd shopper && npm run dev",
     "dev:13:04:01": "cd 13-nodejs-essential-training-web-servers-tests-and-development/04-websockets/01-create-a-websocket && npm run serve",
-    "test": "jest --coverage"
+    "test": "jest --watchAll --verbose --coverage"
   },
   "keywords": [],
   "author": "",
