@@ -51,6 +51,15 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 - **[12 Database For NodeJS Developers](https://github.com/noeyislearning/learning-app-assessment/tree/main/12-database-for-nodejs-developers)**
 
   - This course presents a comprehensive walkthrough on how Node.js developers can effectively interact with various types of databases. From relational databases to NoSQL and key-value stores, this document provides knowledge, practical exercises, and useful examples for the real-world application of database concepts in Node.js.
+ 
+- **[13 NodeJS Essential Training Web Servers Tests and Deployment](https://github.com/noeyislearning/learning-app-assessment/tree/main/13-nodejs-essential-training-web-servers-tests-and-development)**
+
+  - This comprehensive course dives deeper into the world of Node.js, exploring topics that go beyond the basics. It focuses on understanding the HTTP module, working with npm, creating web servers, using WebSockets, testing in Node.js, and automated deployment. Applicants should be familiar with basic Node.js concepts and comfortable using Visual Studio Code (VSCode).
+
+- **[14 NodeJS Security](https://github.com/noeyislearning/learning-app-assessment/tree/main/14-nodejs-security)**
+
+  - This course provides an in-depth exploration of security considerations when working with Node.js. It provides practical instructions and best practices for securing Node.js projects, focusing on various aspects, from package management to server level security, data handling, and effective testing tools. It aims to educate readers on potential vulnerabilities and how to prevent them, leveraging OWASP resources and other industry standards.
+
 
 ## Usage
 
