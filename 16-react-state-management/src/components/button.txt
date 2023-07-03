@@ -1,0 +1,1 @@
+<button onClick={() => this.setState({showAuthors: !this.state.showAuthors})} style={{textSize: '14px', margin: '5px', color: 'blue'}}> Toggle authors </button>
