@@ -2,6 +2,10 @@ import Hello from "./components/Hello";
 import RenderingList from "./components/RenderingList";
 import RenderingObjectList from "./components/RenderingObjectList";
 import ConditionalRendering from "./components/ConditionalRendering";
+import ArrayDestructuring from "./components/ArrayDestructuring";
+import UsingUseState from "./components/UsingUseState";
+import UsingMultipleUseState from "./components/UsingMultipleUseState";
+import UsingUseEffect from "./components/UsingUseEffect";
 
 const city = {
   name: "Mabalacat",
@@ -53,6 +57,18 @@ function App(props) {
 
       <h1>🔥 Component Conditional Rendering</h1>
       <ConditionalRendering season="summer"/>
+
+      <h1>🔥 Array Destructuring</h1>
+      <ArrayDestructuring />
+
+      <h1>🔥 Using useState</h1>
+      <UsingUseState />
+
+      <h1>🔥 Using Multiple useState</h1>
+      <UsingMultipleUseState />
+
+      <h1>🔥 Using useEffect</h1>
+      <UsingUseEffect />
     </>
   )
 }
