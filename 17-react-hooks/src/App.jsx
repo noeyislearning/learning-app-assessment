@@ -2,6 +2,7 @@ import Hello from "./components/Hello"
 import ArrayObjectDestructuring from "./components/ArrayObjectDestructuring"
 import UsingUseState from "./components/UsingUseState"
 import WorkingWithComponentTrees from "./components/WorkingWithComponentTrees"
+import InteractionComponentTrees from "./components/InteractionComponentTrees"
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
 
       <h3>🔥 Working with Component Trees</h3>
       <WorkingWithComponentTrees />
+
+      <h3>🔥 Interaction Component Trees</h3>
+      <InteractionComponentTrees />
     </>
   )
 }
