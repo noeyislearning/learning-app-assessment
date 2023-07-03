@@ -6,6 +6,9 @@ import ArrayDestructuring from "./components/ArrayDestructuring";
 import UsingUseState from "./components/UsingUseState";
 import UsingMultipleUseState from "./components/UsingMultipleUseState";
 import UsingUseEffect from "./components/UsingUseEffect";
+import UpdatingWithTheUseEffect from "./components/UpdatingWithTheUseEffect";
+import FetchingDataWithUseEffect from "./components/FetchingDataWithUseEffect";
+import UsingUseReducer from "./components/UsingUseReducer";
 
 const city = {
   name: "Mabalacat",
@@ -69,6 +72,15 @@ function App(props) {
 
       <h1>🔥 Using useEffect</h1>
       <UsingUseEffect />
+
+      <h1>🔥 Updating with the useEffect</h1>
+      <UpdatingWithTheUseEffect />
+
+      <h1>🔥 Fetching Data with the useEffect</h1>
+      <FetchingDataWithUseEffect user="noeyislearning"/>
+
+      <h1>🔥 Using useReducer</h1>
+      <UsingUseReducer />
     </>
   )
 }
