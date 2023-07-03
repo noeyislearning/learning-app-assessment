@@ -10,7 +10,9 @@
     "dev:12b": "cd 12-database-for-nodejs-developers && cd shopper && npm run dev",
     "dev:13:04:01": "cd 13-nodejs-essential-training-web-servers-tests-and-development/04-websockets/01-create-a-websocket && npm run serve",
     "test": "jest --watchAll --verbose --coverage",
-    "dev:15": "cd 15-learning-reactjs && npm run dev"
+    "dev:15": "cd 15-learning-reactjs && npm run dev",
+    "dev:16:install": "cd 16-react-state-management && npm i",
+    "dev:16:start": "cd 16-react-state-management && npm start"
   },
   "keywords": [],
   "author": "",
