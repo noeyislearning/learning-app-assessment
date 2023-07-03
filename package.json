@@ -48,6 +48,7 @@
     "node-localstorage": "^2.2.1",
     "pm2": "^2.10.4",
     "pug": "^3.0.2",
+    "react-icons": "^4.10.1",
     "sequelize": "^6.32.1",
     "serve": "^14.2.0",
     "single-line-log": "^1.1.2",
