@@ -51,7 +51,7 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 - **[12 Database For NodeJS Developers](https://github.com/noeyislearning/learning-app-assessment/tree/main/12-database-for-nodejs-developers)**
 
   - This course presents a comprehensive walkthrough on how Node.js developers can effectively interact with various types of databases. From relational databases to NoSQL and key-value stores, this document provides knowledge, practical exercises, and useful examples for the real-world application of database concepts in Node.js.
- 
+
 - **[13 NodeJS Essential Training Web Servers Tests and Deployment](https://github.com/noeyislearning/learning-app-assessment/tree/main/13-nodejs-essential-training-web-servers-tests-and-development)**
 
   - This comprehensive course dives deeper into the world of Node.js, exploring topics that go beyond the basics. It focuses on understanding the HTTP module, working with npm, creating web servers, using WebSockets, testing in Node.js, and automated deployment. Applicants should be familiar with basic Node.js concepts and comfortable using Visual Studio Code (VSCode).
@@ -60,8 +60,15 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
   - This course provides an in-depth exploration of security considerations when working with Node.js. It provides practical instructions and best practices for securing Node.js projects, focusing on various aspects, from package management to server level security, data handling, and effective testing tools. It aims to educate readers on potential vulnerabilities and how to prevent them, leveraging OWASP resources and other industry standards.
 
+- **[15 Learning ReactJS](https://github.com/noeyislearning/learning-app-assessment/tree/main/15-learning-reactjs)**
 
-## Usage
+  - A comprehensive and methodical guide that will equip learners with the essential knowledge and skills to proficiently work with React JS, a popular JavaScript library. The course takes a deep dive into the world of React, focusing on critical topics such as React elements, React components, state with hooks, and various enhancements.
+
+- **[16 React State Manangement](https://github.com/noeyislearning/learning-app-assessment/tree/main/16-react-state-management)**
+
+  - This course presents a comprehensive guide on state management in React, a crucial aspect of web development that helps handle data that changes over time. The guide will explore various state management solutions, highlight their advantages, drawbacks, and provide insight into how developers can effectively manage state within their React applications.
+
+<!-- ## Usage
 
 ### For **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
 
@@ -73,4 +80,4 @@ npm install
 
 # Run in development
 npm run dev:08
-```
+``` -->
