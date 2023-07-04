@@ -17,7 +17,9 @@
     "dev:17:install": "cd 17-react-hooks && npm i",
     "dev:17:dev": "cd 17-react-hooks && npm run dev",
     "dev:18:install": "cd 18-building-restful-api-with-nodejs-and-express && npm i",
-    "dev:18:dev": "cd 18-building-restful-api-with-nodejs-and-express && npm run dev"
+    "dev:18:dev": "cd 18-building-restful-api-with-nodejs-and-express && npm run dev",
+    "dev:19:install": "cd 19-meet-the-strangers && npm i",
+    "dev:19:dev": "cd 19-meet-the-strangers && npm run dev"
   },
   "keywords": [],
   "author": "",
