@@ -5,6 +5,10 @@ import WorkingWithComponentTrees from "./components/WorkingWithComponentTrees";
 import InteractionComponentTrees from "./components/InteractionComponentTrees";
 import UsingUseEffect from "./components/UsingUseEffect";
 import FetchingDataWithUseEffect from "./components/fetchingDataWithUseEffect";
+import HandlingComplexStateUseReducer from "./components/HandlingComplexStateUseReducer";
+import DispatchingActions from "./components/DispatchingActions";
+import ManagingFromInputs from "./components/ManagingFromInputs";
+import CreatingControlledComponents from "./components/CreatingControlledComponents";
 
 function App() {
   return (
@@ -29,6 +33,18 @@ function App() {
 
       <h3>🔥 Fetching Data with useEffect</h3>
       <FetchingDataWithUseEffect />
+
+      <h3>🔥 Handling Complex State with useReducer</h3>
+      <HandlingComplexStateUseReducer />
+
+      <h3>🔥 Dispatching Actions</h3>
+      <DispatchingActions />
+
+      <h3>🔥 Managing Form Inputs</h3>
+      <ManagingFromInputs />
+
+      <h3>🔥 Creating Controlled Components</h3>
+      <CreatingControlledComponents />
     </>
   )
 }
