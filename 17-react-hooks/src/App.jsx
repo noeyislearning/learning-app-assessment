@@ -1,8 +1,10 @@
-import Hello from "./components/Hello"
-import ArrayObjectDestructuring from "./components/ArrayObjectDestructuring"
-import UsingUseState from "./components/UsingUseState"
-import WorkingWithComponentTrees from "./components/WorkingWithComponentTrees"
-import InteractionComponentTrees from "./components/InteractionComponentTrees"
+import Hello from "./components/Hello";
+import ArrayObjectDestructuring from "./components/ArrayObjectDestructuring";
+import UsingUseState from "./components/UsingUseState";
+import WorkingWithComponentTrees from "./components/WorkingWithComponentTrees";
+import InteractionComponentTrees from "./components/InteractionComponentTrees";
+import UsingUseEffect from "./components/UsingUseEffect";
+import FetchingDataWithUseEffect from "./components/fetchingDataWithUseEffect";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
 
       <h3>🔥 Interaction Component Trees</h3>
       <InteractionComponentTrees />
+
+      <h3>🔥 Using useEffect</h3>
+      <UsingUseEffect />
+
+      <h3>🔥 Fetching Data with useEffect</h3>
+      <FetchingDataWithUseEffect />
     </>
   )
 }
