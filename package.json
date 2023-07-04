@@ -15,7 +15,9 @@
     "dev:16:install": "cd 16-react-state-management && npm i",
     "dev:16:dev": "cd 16-react-state-management && npm start",
     "dev:17:install": "cd 17-react-hooks && npm i",
-    "dev:17:dev": "cd 17-react-hooks && npm run dev"
+    "dev:17:dev": "cd 17-react-hooks && npm run dev",
+    "dev:18:install": "cd 18-building-restful-api-with-nodejs-and-express && npm i",
+    "dev:18:dev": "cd 18-building-restful-api-with-nodejs-and-express && npm run dev"
   },
   "keywords": [],
   "author": "",
