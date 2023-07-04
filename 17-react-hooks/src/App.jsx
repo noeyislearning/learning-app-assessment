@@ -9,6 +9,8 @@ import HandlingComplexStateUseReducer from "./components/HandlingComplexStateUse
 import DispatchingActions from "./components/DispatchingActions";
 import ManagingFromInputs from "./components/ManagingFromInputs";
 import CreatingControlledComponents from "./components/CreatingControlledComponents";
+import ReusingLogicWithCustomHooks from "./components/ReusingLogicWithCustomHooks";
+import PlacingDatainContext from "./components/PlacingDatainContext";
 
 function App() {
   return (
@@ -45,6 +47,12 @@ function App() {
 
       <h3>🔥 Creating Controlled Components</h3>
       <CreatingControlledComponents />
+
+      <h3>🔥 Reusing Logic with Custom Hooks</h3>
+      <ReusingLogicWithCustomHooks />
+
+      <h3>🔥 Placing Data in Context</h3>
+      <PlacingDatainContext />
     </>
   )
 }
