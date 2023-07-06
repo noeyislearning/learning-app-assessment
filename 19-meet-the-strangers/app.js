@@ -61,12 +61,30 @@ io.on("connection", (socket) => {
     }
   });
 
+  socket.on("pre-offer-answer", (data) => {
+    const { callerSocketId } = data;
+
+    const connectedPeer = connectedPeers.find(
+      (peerSocketId) => peerSocketId === callerSocketId
+    );
+
+    if (connectedPeer) {
+      io.to(callerSocketId).emit("pre-offer-answer", data);
+    } else {
+      const data = {
+        preOfferAnswer: "CALLER_NOT_FOUND",
+      };
+      io.to(socket.id).emit("pre-offer-answer", data);
+    }
+  });
+
   socket.on("disconnect", () => {
     console.log("User has disconnected.\n");
 
     const newConnectedPeers = connectedPeers.filter((peerSocketId) => peerSocketId !== socket.id);
 
     connectedPeers = newConnectedPeers;
+    console.log(connectedPeers);
   });
 });
 

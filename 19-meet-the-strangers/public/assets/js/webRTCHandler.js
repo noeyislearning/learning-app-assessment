@@ -5,20 +5,29 @@ import * as ui from "./ui.js";
 let connectedUserDetails;
 
 export const sendPreOffer = (callType, calleePersonalCode) => {
-  const data = {
+
+  connectedUserDetails = {
     callType,
-    calleePersonalCode,
+    socketId: calleePersonalCode,
   }
 
-  wss.sendPreOffer(data);
+  if (callType === constants.callType.CHAT_PERSONAL_CODE || callType === constants.callType.VIDEO_PERSONAL_CODE) {
+    const data = {
+      callType,
+      calleePersonalCode,
+    };
+
+    ui.showCallingDialog(callingDialogRejectCallHandler);
+    wss.sendPreOffer(data);
+  }
 }
 
 export const handlePreOffer = (data) => {
   const { callType, callerSocketId } = data;
 
   connectedUserDetails = {
-    socketId: callerSocketId,
     callType,
+    socketId: callerSocketId,
   };
 
   if (callType === constants.callType.CHAT_PERSONAL_CODE || callType === constants.callType.VIDEO_PERSONAL_CODE) {
@@ -27,9 +36,49 @@ export const handlePreOffer = (data) => {
 };
 
 const acceptCallHandler = () => {
-  console.log("Call accepted.");
+  sendPreOfferAnswer(constants.preOfferAnswer.CALL_ACCEPTED);
+  ui.showCallElements(connectedUserDetails.callType);
 };
 
 const rejectCallHandler = () => {
-  console.log("Call rejected.");
+  sendPreOfferAnswer(constants.preOfferAnswer.CALL_REJECTED);
+};
+
+const callingDialogRejectCallHandler = () => {
+  console.log("Rejecting Call.")
+};
+
+const sendPreOfferAnswer = (preOfferAnswer) => {
+  const data = {
+    callerSocketId: connectedUserDetails.socketId,
+    preOfferAnswer,
+  };
+
+  ui.removeAllDialogs();
+  wss.sendPreOfferAnswer(data);
+};
+
+export const handlePreOfferAnswer = (data) => {
+  const { preOfferAnswer } = data;
+
+  console.log("pre-offer-answer: ");
+  console.log(data);
+
+  ui.removeAllDialogs();
+
+  if (preOfferAnswer === constants.preOfferAnswer.CALLEE_NOT_FOUND) {
+    ui.showInfoDialog(preOfferAnswer);
+  }
+
+  if (preOfferAnswer === constants.preOfferAnswer.CALL_ACCEPTED) {
+    ui.showCallElements(connectedUserDetails.callType);
+  }
+
+  if (preOfferAnswer === constants.preOfferAnswer.CALL_REJECTED) {
+    ui.showInfoDialog(preOfferAnswer);
+  }
+
+  if (preOfferAnswer === constants.preOfferAnswer.CALL_UNAVAILABLE) {
+    ui.showInfoDialog(preOfferAnswer);
+  }
 };
