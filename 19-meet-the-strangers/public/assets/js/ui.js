@@ -17,6 +17,11 @@ export const updateLocalVideo = (stream) => {
   });
 };
 
+export const updateRemoteVideo = (stream) => {
+  const remoteVideo = document.getElementById("remote_video");
+  remoteVideo.srcObject = stream;
+};
+
 export const showIncomingCallDialog = (callType, acceptCallHandler, rejectCallHandler) => {
   const callTypeInfo = callType === constants.callType.CHAT_PERSONAL_CODE ? "Chat" : "Video";
   const incomingCallDialog = elements.getIncomingDialog(
@@ -102,7 +107,7 @@ const showVideoCallElements = () => {
   showElement(callButtons);
 
   const placeholder = document.getElementById("video_placeholder");
-  hideElement(placeholder);s
+  hideElement(placeholder);
 
   const remoteVideo = document.getElementById("remote_video");
   showElement(remoteVideo);
@@ -113,6 +118,28 @@ const showVideoCallElements = () => {
   disableDashboard();
 };
 
+/**
+ * Video & audio elements
+ */
+
+const micOnImgSrc = "../assets/utils/images/mic.png";
+const micOffImgSrc = "../assets/utils/images/micOff.png";
+const cameraOnImgSrc = "../assets/utils/images/camera.png";
+const cameraOffImgSrc = "../assets/utils/images/cameraOff.png";
+
+export const updateMicButton = (micActive) => {
+  const micButtonimg = document.getElementById("mic_button_image");
+  micButtonimg.src = micActive ? micOnImgSrc : micOffImgSrc;
+};
+
+export const updateCameraButton = (cameraActive) => {
+  const cameraButtonimg = document.getElementById("camera_button_image");
+  cameraButtonimg.src = cameraActive ? cameraOnImgSrc : cameraOffImgSrc;
+};
+
+/**
+ * Dashboards
+ */
 const enableDashboard = () => {
   const dashboardBloker = document.getElementById("dashboard_blur");
   if (!dashboardBloker.classList.contains("display_none")) {
@@ -127,6 +154,10 @@ const disableDashboard = () => {
   }
 };
 
+/**
+ * Showing and hiding elements
+ * @param {*} element 
+ */
 const hideElement = (element) => {
   if (!element.classList.contains("display_none")) {
     element.classList.add("display_none");
