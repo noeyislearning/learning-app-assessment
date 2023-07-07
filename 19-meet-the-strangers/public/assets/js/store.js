@@ -1,3 +1,5 @@
+import * as constants from "./constants.js";
+
 // Initial State
 let state = {
   socketId: null,
@@ -6,6 +8,7 @@ let state = {
   screennSharingStream: null,
   allowConnectionsFromStrangers: false,
   screenSharingActive: false,
+  callState: constants.callState.CALL_AVAILABLE,
 }
 
 export const setSocketId = (socketId) => {
@@ -13,7 +16,6 @@ export const setSocketId = (socketId) => {
     ...state,
     socketId,
   };
-  console.log(state)
 };
 
 export const setLocalStream = (stream) => {
@@ -48,6 +50,13 @@ export const setRemoteStream = (stream) => {
   state = {
     ...state,
     remoteStream: stream,
+  };
+};
+
+export const setCallState = (callState) => {
+  state = {
+    ...state,
+    callState,
   };
 };
 

@@ -4,6 +4,7 @@ import * as webRTCHandler from "./webRTCHandler.js";
 import * as constants from "./constants.js";
 import * as ui from "./ui.js";
 import * as recording from "./recording.js";
+import * as stranger from "./stranger.js";
 
 // Initializing the socket variable with the SocketIO Connection
 const socket = io("/");
@@ -40,6 +41,29 @@ personalCodeVideoButton.addEventListener("click", () => {
   webRTCHandler.sendPreOffer(callType, calleePersonalCode);
 });
 
+const strangerChatButton = document.getElementById("stranger_chat_button");
+strangerChatButton.addEventListener("click", () => {
+  stranger.getStrangerSocketIdAndConnect(
+    constants.callType.CHAT_STRANGER
+  );
+});
+
+const strangerVideoButton = document.getElementById("stranger_video_button");
+strangerVideoButton.addEventListener("click", () => {
+  stranger.getStrangerSocketIdAndConnect(
+    constants.callType.VIDEO_STRANGER
+  );
+});
+
+// Allow Conncetion From Strangers
+const allowConnectionFromStrangersCheckbox = document.getElementById("allow_strangers_checkbox");
+allowConnectionFromStrangersCheckbox.addEventListener("click", () => {
+  const checkBoxState = store.getState().allowConnectionsFromStrangers;
+  ui.updateStrangerCheckbox(!checkBoxState);
+  store.setAllowConnectionsFromStrangers(!checkBoxState);
+  stranger.changeStrangerConnectionStatus(!checkBoxState);
+});
+
 // Video Buttons
 const micButton = document.getElementById("mic_button");
 micButton.addEventListener("click", () => {
@@ -73,7 +97,6 @@ switchForScreenSharingButton.addEventListener("click", () => {
 // Messensger
 const newMessageInput = document.getElementById("new_message_input"); 
 newMessageInput.addEventListener("keydown", (event) => {
-  console.log("Key down event.");
   const key = event.key;
 
   if (key === "Enter") {
@@ -114,4 +137,15 @@ const resumeRecordingButton = document.getElementById("resume_recording_button")
 resumeRecordingButton.addEventListener("click", () => {
   recording.resumeRecording();
   ui.switchRecordingButtons(false);
+});
+
+// Hang up
+const hangUpButton = document.getElementById("hang_up_button");
+hangUpButton.addEventListener("click", () => {
+  webRTCHandler.handleHangUp();
+});
+
+const hangUpChatButton = document.getElementById("finish_chat_call_button");
+hangUpChatButton.addEventListener("click", () => {
+  webRTCHandler.handleHangUp();
 });

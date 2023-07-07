@@ -2,16 +2,15 @@ import * as store from "./store.js";
 import * as ui from "./ui.js";
 import * as webRTCHandler from "./webRTCHandler.js";
 import * as constants from "./constants.js";
+import * as stranger from "./stranger.js";
 
 let socketIO = null;
 
 export const registerSocketEvents = (socket) => {
 
   socket.on("connect", () => {
-
     socketIO = socket;
 
-    console.log("Successfully established a connection with the SocketIO server.");
     store.setSocketId(socket.id);
     ui.updatePersonalCode(socket.id);
   });
@@ -24,23 +23,28 @@ export const registerSocketEvents = (socket) => {
     webRTCHandler.handlePreOfferAnswer(data);
   });
 
+  socket.on("user-hanged-up", () => {
+    webRTCHandler.handleConnectedUserHangedUp();
+  });
+
   socket.on("webRTC-signaling", (data) => {
     switch(data.type) {
       case constants.webRTCSignaling.OFFER:
-        console.log("Handling WebRTC offer.");
         webRTCHandler.handleWebRTCOffer(data);
         break;
       case constants.webRTCSignaling.ANSWER:
-        console.log("Handling WebRTC answer.");
         webRTCHandler.handleWebRTCAnswer(data);
         break;
       case constants.webRTCSignaling.ICE_CANDIDATE:
-        console.log("Handling ICE candidate.");
         webRTCHandler.handleWebRTCCandidate(data);
         break;
       default:
         return;
     };
+  });
+
+  socket.on("stranger-socket-id", (data) => {
+    stranger.connectWithStranger(data);
   });
 };
 
@@ -58,4 +62,16 @@ export const sendDataUsingWebRTCSignaling = (data) => {
 
 export const sendWebRTCCandidate = (data) => {
   socketIO.emit("webRTC-signaling", data);
+};
+
+export const sendUserHangedUp = (data) => {
+  socketIO.emit("user-hanged-up", data);
+};
+
+export const changeStrangerConnectionStatus = (data) => {
+  socketIO.emit("stranger-connection-status", data);
+};
+
+export const getStrangerSocketId = () => {
+  socketIO.emit("get-stranger-socket-id");
 };
