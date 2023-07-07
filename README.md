@@ -40,16 +40,4 @@ Learning App Assessment, a personal dev. notes about the courses I took in the L
 
 - **[18 Building RESTful API with NodeJS and Express](https://github.com/noeyislearning/learning-app-assessment/tree/main/18-building-restful-api-with-nodejs-and-express)**
 
-<!-- ## Usage
-
-### For **[08 Building a Website with NodeJS and ExpressJS 3](https://github.com/noeyislearning/learning-app-assessment/tree/main/08-building-a-website-with-nodejs-and-expressjs-3)**
-
-To run the server for this project, you need to install the dependencies first.
-
-```bash
-# Install dependencies
-npm install
-
-# Run in development
-npm run dev:08
-``` -->
+- **[19 WebRTC 2022 Practical Course: Create a Video-Chat application - Meet The Stranger](https://github.com/noeyislearning/learning-app-assessment/tree/main/19-meet-the-strangers)**
