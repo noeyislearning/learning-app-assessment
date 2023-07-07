@@ -5,6 +5,7 @@ import * as store from "./store.js";
 
 let connectedUserDetails;
 let peerConnection;
+let dataChannel;
 
 const STUN_SERVER = "stun:stun1.l.google.com:19302"
 
@@ -30,6 +31,22 @@ export const getLocalPreview = () => {
 
 const createPeerConnection = () => {
   peerConnection = new RTCPeerConnection(peerConfiguration);
+
+  dataChannel = peerConnection.createDataChannel("chat");
+
+  peerConnection.ondatachannel = (event) => {
+    const dataChannel = event.channel;
+    dataChannel.onopen = () => {
+      console.log("Peer connection is ready to receive data channel messages.");
+    };
+
+    dataChannel.onmessage = (event) => {
+      console.log("Received message from data channel: ", event.data);
+      const parsedMessage = JSON.parse(event.data);
+      ui.appendMessage(parsedMessage);  
+      console.log(parsedMessage)
+    };
+  };
 
   peerConnection.onicecandidate = (event) => {
     console.log("Getting Ice Candidates from STUN server.");
@@ -63,6 +80,11 @@ const createPeerConnection = () => {
       peerConnection.addTrack(track, localStream);
     }
   };
+};
+
+export const sendMessageUsingDataChannel = (message) => {
+  const stringifiedMessage = JSON.stringify(message);
+  dataChannel.send(stringifiedMessage);
 };
 
 
@@ -169,13 +191,6 @@ export const handleWebRTCOffer = async (data) => {
     type: constants.webRTCSignaling.ANSWER,
     answer: answer,
   });
-
-  // const dataToSend = {
-  //   answer,
-  //   connectedUserSocketId: connectedUserDetails.socketId,
-  // };
-
-  // wss.sendWebRTCAnswer(dataToSend);
 };
 
 export const handleWebRTCAnswer = async (data) => {
